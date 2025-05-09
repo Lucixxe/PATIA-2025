@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sokoban Web Interface</title>
+  <style>
+    body {
+      background: #111;
+      color: #eee;
+      font-family: sans-serif;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 40px;
+    }
+    canvas {
+      background: #222;
+      border: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bienvenue sur l'interface Sokoban !</h1>
+  <p>Le planificateur est intégré au moteur de jeu.</p>
+  <canvas id="gameCanvas" width="600" height="600"></canvas>
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.fillStyle = "#666";
+    ctx.fillRect(50, 50, 500, 500);
+
+    ctx.fillStyle = "#fff";
+    ctx.font = "20px sans-serif";
+    ctx.fillText("L'interface fonctionne !", 180, 320);
+  </script>
+</body>
+</html>
