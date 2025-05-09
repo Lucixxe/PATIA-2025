@@ -36,6 +36,12 @@ TP1-NPuzzle/
 
 ## 🚀 Utilisation (compatible VM PATIA)
 
+### 🛠️ Installation des dépendances (une seule fois)
+Avant de lancer le TP, installe les dépendances suivantes :
+```bash
+pip install pandas
+pip3 install matplotlib
+```
 ### 1. Générer les puzzles
 
 La génération est automatiquement intégrée dans `benchmark.py`.
